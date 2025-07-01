@@ -2,6 +2,7 @@ package com.todo.todoapp;
 
 import java.util.ArrayList;
 
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/tasks")
+@Service
 public class TaskController {
 
     private final TaskService taskService;
