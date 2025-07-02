@@ -1,9 +1,10 @@
 package com.todo.todoapp;
 
 import java.util.ArrayList;
-
+import org.springframework.stereotype.Service;
 import com.todo.todoapp.exception.TaskNotFoundException;
 
+@Service
 public class TaskService {
     private final ArrayList<Task> tasks = new ArrayList<>();
     
